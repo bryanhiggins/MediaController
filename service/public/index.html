@@ -1,0 +1,21 @@
+<html>
+  <script type="text/javascript">
+    function send(remote, key) {
+      var req = new XMLHttpRequest();
+      req.open("GET", "/send?remote=" + remote + "&key=" + key);
+      req.send();
+    }
+  </script>
+<body>
+  <input type="button" value="POWER ON" onclick="send('denon-rc872', 'KEY_POWER')" />
+  <input type="button" value="POWER OFF" onclick="send('denon-rc872', 'KEY_POWER2')" />
+  <input type="button" value="VOLUME UP" onclick="send('denon-rc872', 'KEY_VOLUMEUP')" />
+  <input type="button" value="VOLUME DOWN" onclick="send('denon-rc872', 'KEY_VOLUMEDOWN')" />
+  <input type="button" value="MUTE" onclick="send('denon-rc872', 'KEY_MUTE')" />
+  <input type="button" value="SPEAKER A" onclick="send('denon-rc872', 'KEY_A')" />
+  <input type="button" value="SPEAKER B" onclick="send('denon-rc872', 'KEY_B')" />
+  <input type="button" value="MUSIC" onclick="send('denon-rc872', 'KEY_CD')" />
+  <input type="button" value="VIDEO" onclick="send('denon-rc872', 'KEY_VIDEO')" />
+  <input type="button" value="PHONO" onclick="send('denon-rc872', 'KEY_PHONE')" />
+</body>
+</html>

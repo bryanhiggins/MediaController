@@ -1,0 +1,13 @@
+{
+  "author": "Bryan Higgins",
+  "name": "media-contoller-service",
+  "description": "REST service for IR transmission",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bryanhiggins/media-controller.git"
+  },
+  "dependencies": {
+    "express": "*"
+  }
+}
