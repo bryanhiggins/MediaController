@@ -1,6 +1,6 @@
 var cp = require("child_process"),
     send = function (remote, key) {
-        cp.exec("irsend -# 2 -d /dev/lircd1 SEND_ONCE " + remote + " " + key);
+        cp.exec("irsend -d /dev/lircd1 SEND_ONCE " + remote + " " + key);
     };
 
 module.exports = {
